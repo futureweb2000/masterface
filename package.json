@@ -1,0 +1,11 @@
+{
+  "name": "masterface",
+  "version": "1.0.0",
+  "description": "A digital agency that makes beautiful and high quality sites",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mario Godinez",
+  "license": "ISC"
+}
