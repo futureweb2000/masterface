@@ -2240,6 +2240,12 @@ button:hover {
 .colorWhite {
   color: #fff !important;
 }
+.colorRed {
+  color: #ca0000;
+}
+.colorGreen {
+  color: #008000;
+}
 .backgreen {
   background: #8ace30;
 }
