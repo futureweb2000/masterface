@@ -1,0 +1,1459 @@
+@import 'nib';
+
+rojito = #ca0000
+gradientBlue = linear-gradient(135deg, rgb(32, 17, 81) 0px, rgb(19, 118, 134) 79%, rgb(19, 118, 134) 100%)
+grisesito = #4C5867
+verdesito = #8ACE30
+azulFuerte = #088DC3
+azulOscuro = #232C3B
+body
+	max-width 1290px
+	margin 0 auto
+	padding 0
+	font-family Lato
+
+.header
+	margin 0
+	padding 0
+	.intro-header
+		margin 0 auto
+		text-align center
+		font-size 1.7em
+		color white
+		position absolute
+		top 85px
+		left 0
+		right 0
+		height 400px
+		max-width 900px
+		text-shadow 0 0 10px #000
+		padding 15px
+		font-size 1.4em
+		z-index 10
+		padding-bottom 0
+		h1
+			margin 0
+			margin-bottom 10px
+			font-size 1.5em
+			font-family 'Merriweather' !important
+			font-weight 300 
+			// text-transform uppercase
+			
+		h2
+			margin 10px 0
+			margin-bottom 30px
+			font-size 1em
+			font-family 'Raleway' !important
+			font-weight 100 !important
+			display block
+		a
+			margin 0 5px
+			font-size .7em
+			padding 8px 12px
+			margin-top 15px
+			
+
+	img
+		width 100%
+		height auto
+		max-height 700px
+		position relative 
+		top 80px
+		z-index 1
+		// top 0
+		// left 0
+		
+h1,h2,h3,h4,h5,h6
+	font-family 'Merriweather' !important
+p,span, label
+	font-family 'Raleway'
+	font-weight 400
+	
+.my-nav
+	background rgba(0,0,0,1)
+	width 100%
+	font-family 'Lato' sans-serif
+	border-bottom 2px dashed azulFuerte
+	display flex
+	justify-content space-between
+	align-items center
+	padding 5px 0
+	.navigation
+		margin 0
+		ul
+			font-family serif
+			border 0
+			list-style none
+			background rgba(0,0,0,.8)
+			position absolute
+			top 0
+			right -400px
+			padding 20px
+			transition .6s
+			width 280px
+			border-radius 0 0 0 10px 
+			
+			li
+				font-size 1.5em
+				text-transform uppercase
+				margin-right .3em
+				text-shadow 0 0 10px #000
+				border-bottom 2px solid azulFuerte
+				margin-top 1.3em 
+				a
+					color white !important
+					font-family 'Lato'
+					margin-left 10px
+					text-decoration none
+					transition .4s
+					&:hover
+						color #15a6e0 !important
+				&:last-child
+					margin-right 0
+	.logo
+		margin 0 auto	
+.our-work
+	display flex
+	&-item
+		margin 0
+		&-img
+			width 100%
+			
+			img
+				width 100%
+				height 100%	
+.our-services
+	margin 0
+	margin-bottom 50px
+	
+	&-wrap
+		margin 0
+		text-align center
+		&-item
+			margin 90px auto
+			padding-top 50px
+			border 1px solid azulFuerte
+			max-width 360px
+			padding-bottom 20px
+			&-icon
+				width 90px
+				height 90px
+				border 1px solid azulFuerte
+				margin 0 auto
+				font-size 28px
+				display flex
+				justify-content center
+				align-items center
+				border-radius 50%
+				background white
+				margin-top -95px
+				// color #14687E
+				color azulFuerte
+				transition .5s
+				&:hover
+					color white
+					background gradientBlue
+					transition .5s
+					
+				
+			&-text
+				color #333
+				width 90%
+				margin 0 auto
+			&-title		
+				text-transform uppercase
+				font-weight normal	
+				font-size 21px
+
+.hosting
+	border 1px solid gray
+	padding 50px 0
+	&-intro
+		text-align center
+		max-width 800px
+		margin 0 auto
+		p
+			font-size 18px
+		
+	&-plans
+		padding 0 20px 
+		display flex
+		justify-content center
+		flex-direction column
+		width 100%
+		&-item
+			border 1px solid #ddd
+			width 300px
+			text-align center
+			margin 20px auto
+			&-header
+				background #fff
+				&-title
+					color #333
+					margin 0
+					padding 10px
+					font-size 35px
+					background #eee
+				&-price
+					color azulOscuro
+					font-weight bold
+					text-shadow 2px 2px 0 azulFuerte
+					font-size 55px
+					background white
+					padding 10px 0 0 0 
+					margin-bottom 0
+				&-iva
+					margin-bottom 20px !important
+					display inline-block
+					
+			&-features
+				color azulFuerte
+				list-style none
+				padding 0
+				margin 0
+				font-size 16px
+				
+				&-item
+					padding 10px
+					
+					&:nth-child(odd)
+						background #eee
+.domains
+	margin 0
+	.search-domain
+		margin 0
+		color #000
+		background #eee
+		color azulOscuro
+		
+		.col2
+			padding 0
+			
+			form
+				padding 20px
+				background white
+				border 1px solid #e1e1e1
+				border-radius 5px
+				// flex-wrap wrap
+				// display flex
+				input
+					background #eee
+					border 1px solid #e1e1e1
+					color #333 !important
+					padding 10px
+					&:first-child
+						border-right 1px solid #ccc
+						color #000 !important
+				select
+					color red
+				button
+					border-radius 0px !important
+					
+					// margin 10px
+					
+			.terms
+				display flex
+				flex-wrap wrap
+				justify-content center
+				.term
+					border 1px solid #e1e1e1
+					background white
+					font-size 17px
+					margin 5px
+					padding 5px
+					border-radius 5px
+					p
+						margin 0
+				
+.why
+	margin 0
+	background azulFuerte
+	padding 30px 0
+	&-intro
+		margin 0
+		&-title
+			text-align center
+			display flex
+			flex-direction column
+			color #000
+			margin-bottom 0
+			&:after
+				content ''
+				width 50px
+				height 3px
+				margin 15px auto
+				background white
+				display inline-block
+		&-text
+			text-align center
+	&-items
+		margin 0
+		display flex
+		flex-wrap wrap
+		justify-content center
+		align-items center
+		position relative
+		img
+			position absolute
+			top -20px
+			right 4px
+			width 100px
+			height 100px
+		&-info
+			margin 30px 20px
+			max-width 350px
+			font-size 15px
+			font-family "Raleway"
+			&-title
+				display flex
+				flex-direction column
+				font-size 18px
+				text-transform uppercase
+				color white
+				&:after
+					content ''
+					width 27px
+					height 3px
+					margin 10px 0
+					background #000
+					display inline-block
+			&-text
+				margin-top 0
+				display none
+				
+			&-list
+				padding-left 15px 
+				color #fff
+				&-item
+					margin-bottom 6px
+					
+
+
+.support
+	width 100%
+	height 300px
+	display flex
+	flex-wrap wrap
+	margin-bottom 340px
+	margin-top 40px
+	border-bottom 1px solid #eee
+	border-top 1px solid #eee
+	
+	.column1
+		width 100%
+		height 100%
+		figure
+			width 100%
+			height 100%
+
+			img
+				width 100%
+				height 100%
+	.column2
+		width 100%
+		height 100%
+		background azulOscuro
+		color white
+		text-align center
+		&-info
+			margin 40px
+			display flex
+			flex-direction column
+			justify-content center
+			align-items center
+			&-title
+				font-size 35px
+				margin 30px
+			&-text
+				font-size 17px
+				font-weight 100
+				font-family 'Raleway'
+		
+.features
+	margin 0
+	background url('https://images.unsplash.com/photo-1430165558479-de3cf8cf1478?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=efe4f9bee30ae332d8048eaffe6f0a31')
+	background-size cover
+	
+	&-wrap
+		margin 0
+		background rgba(0,0,0,.86)
+		color white
+
+		&-item
+			padding 1.7em 2em
+			flex-direction column
+			
+			&-info
+				margin 0
+				
+				&-text
+					margin 0
+				&-title
+					margin .5em 0
+					text-transform uppercase
+					color azulFuerte
+					
+			&-icon
+				font-size 3em
+				border-radius 50%
+				padding 0em .3em
+				background azulOscuro
+				margin-right .2em
+				border 2px solid azulFuerte
+				span
+					color white	
+
+.process
+	padding 20px 0
+	display flex
+	flex-direction column
+	align-items center
+	background #F6F8F9
+	&-wrap
+		margin 30px 20px 20px 20px
+		display flex
+		flex-direction column
+		&-item
+			text-align center
+			display flex
+			flex-direction column
+			justify-content center
+			margin 0px auto
+			margin-bottom -100px
+			&-icon
+				width 100px
+				height 100px
+				margin 0 auto
+				display flex
+				justify-content center
+				align-items center
+				color white
+				background azulFuerte
+				font-size 50px
+				border-radius 50%
+			&-title
+				color azulFuerte
+			&-text
+				color #333
+			&-number
+				font-size 110px
+				color rgba(10, 179, 249, 0.17)
+				position relative
+				top -140px
+				z-index -2
+				font-weight bold
+				z-index 10
+				
+
+.search-domain
+	background #232C3B
+	color white
+	display flex
+	flex-direction column
+	align-items center
+	padding 2.5em 1em
+	text-align center
+	font-size 1.7em
+	.col1
+		margin 0
+		h2
+			margin 0
+	.col2
+		margin 0
+		form
+			margin 0
+			display flex
+			justify-content flex-start
+			width 100%
+			
+			input
+				width 300px
+				display inine-block
+				outline 0
+				border 0
+				padding-left 8px 
+				border-radius .3em 0 0 .3em
+				color #000
+				font-size 1.6rem
+			button
+				margin 0
+				background rojito
+				outline 0
+				border 0
+				border-radius 0 .3em .3em 0
+				padding 2px 10px
+			.select-wrap
+				background #eee
+				height 45px
+				select
+					border-radius 0
+					font-size 19px
+					height 100%
+					color azulOscuro
+					display flex
+					display inine-block
+					outline 0
+					border 0
+					color #000
+					background #eee
+	
+				option
+					border-bottom 1px solid #eee
+					color azulOscuro !important
+				
+.action
+	font-size 25px
+	background url('https://www.codeavengers.com/image/background/girl-and-laptop.jpg')
+	background-size cover
+	
+	&-info
+		padding 4em 0
+		color white
+		&-title
+			font-size 1.5em	
+			margin-top 0	
+	&-form
+		color gray
+		margin 2em 0
+		input
+			width 360px
+			padding 0 .3em
+			outline 0
+
+
+.footer
+	margin 0
+	font-family 'Raleway' !important
+	font-weight 400
+	.col1
+		margin 0 auto
+		padding 20px 0
+		max-width 450px
+		text-align center
+		h5
+			font-size 25px
+			font-family 'Raleway' !important
+			font-weight 400
+	.col2
+		margin 0
+		p
+			margin 0
+			display flex
+			justify-content center
+			flex-wrap wrap
+			span
+				width 60px
+				height 60px
+				border-radius 50%
+				background azulFuerte
+				color white
+				margin 0 10px
+				font-size 35px
+				display flex
+				justify-content center
+				align-items center
+	.col3
+		margin 0
+		margin-top 30px
+		ul
+			margin 0 auto
+			list-style none
+			padding 0 20px
+			width 75%
+			display flex
+			flex-direction column
+			li
+				color #eee
+				border-bottom 1px solid #fff
+				text-align center
+				padding 10px
+				font-size 17px
+				&:last-child
+					border-bottom 0
+				a
+					color white
+					text-decoration none
+					&:hover
+						text-decoration underline
+						
+
+.questions
+	background #f6f6f6
+	padding 0 !important
+	margin 0 !important
+	display flex
+	flex-direction column
+	align-items flex-start
+	
+	&-learn
+		padding 2em 0
+		display flex
+		margin 0 auto
+		flex-direction column
+		max-width 90%
+		
+		// margin-left 100px
+		&-img
+			width 100%
+			height 300px
+			align-self flex-end
+			img 
+				width 100%
+				height 100%
+		&-info
+			display flex
+			flex-direction column
+			align-items flex-end
+			justify-content flex-end
+			&-text
+				text-align right
+				margin 0
+				
+			&-title
+				text-align right
+				margin 0 !important
+	&-wrap
+		padding 2em 0
+		font-size 1.1em
+		max-width 90%
+		margin 0 auto
+		&-items
+			font-family lato
+			&-item
+				border 1px solid azulOscuro
+				color azulFuerte
+				padding .3em .5em
+				margin .8em 0
+				cursor pointer
+				.answer
+					text-shadow 0 0 5px #ccc
+					margin 0
+					padding .4em
+					display none
+					width 100%
+					color azulOscuro
+				.question
+					margin 0
+					display flex
+					justify-content space-between
+					width 100%
+					align-items center
+					font-size 1.1em
+					span.fa
+						color azulFuerte
+
+.weDo
+	background gradientBlue
+	text-align center
+	width 100%
+	position relative
+	display block
+	padding 1px 7px
+	&-left
+		padding 0
+		&-item
+			max-width 390px
+			height 270px
+			background white
+			margin 70px auto
+			border-radius 8px
+			position relative
+			&-content
+				background url('../img/phone-bax.png')
+				background-repeat no-repeat
+				width 100%
+				height 100%
+				display flex
+				justify-content flex-end
+				align-items center
+				
+				h3
+					width 55%
+					text-align right
+					// margin-right 10px tablets
+					margin-right 2px
+						
+					// font-size 25px
+					font-size 20px
+						
+					
+					
+			.triangle-top
+				position absolute
+				top 30px
+				right -10px
+			.triangle-bottom
+				position absolute
+				top 30px
+				right -10px
+	&-center
+		display none
+		padding 0
+		&-item
+			margin 0
+			&:before
+				width 7px 
+				height 65px
+				background white
+				display inline-block
+				content ""
+				border-radius 0 0 3px 3px
+				position absolute 
+				left 48%
+				top 0
+			&:after
+				width 7px 
+				height 65px
+				background white
+				display inline-block
+				content ""
+				border-radius 3px 3px 0 0 
+				position absolute
+				left 48%
+				bottom 0
+			div
+				position absolute
+				left 47.65%
+				&:nth-child(1)
+					top 100px
+				&:nth-child(2)
+					top 290px
+				&:nth-child(3)
+					top 445px
+				&:nth-child(4)
+					top 630px
+	&-right
+		padding 0
+		// display table-cells
+		
+		&-item
+			max-width 390px
+			height 270px
+			background white
+			margin 70px auto
+			border-radius 8px
+			position relative
+			.triangle-top
+				position absolute
+				bottom 30px
+				left -10px
+			.triangle-bottom
+				position absolute
+				bottom 30px
+				left -10px
+	
+			
+.contact-us
+	background azulFuerte
+	color white	
+	padding 4.5em 0
+	flex-direction column
+	position relative
+	img
+		position absolute 
+		right -10px
+		top -10px
+	&-info
+		display flex
+		flex-direction column
+		&-text
+			font-size 1.5em
+		&-btn
+			margin 0
+			border-color white !important
+			
+
+.about-us
+	margin 0
+	background gradientBlue
+	background-size cover
+	color white
+	padding 3em 0
+	&-item
+		text-align center
+		font-size 2em
+		p
+			margin 0
+		&-icon
+			font-size 70px
+
+.contact
+	margin 0
+	&-title
+		padding .3em
+		background azulFuerte
+		text-align center
+		font-size 5em
+		&-item
+			font-size 1em
+			margin 0
+	&-ways
+		display flex
+		justify-content center
+		flex-wrap wrap
+		text-align center
+		margin 1em 
+		color #000
+		&-item
+			display flex 
+			justify-content center
+			flex-direction column
+			margin 1em 4em
+			padding .4em
+			font-size 1.3em
+			&-icon
+				font-size 2.5em
+				color skyblue !important
+			p
+				margin 0
+				
+				&:nth-child(2)
+					margin .5em 0
+	&-form
+		margin auto
+		width 100%
+		text-align center
+		background azulOscuro
+		color white
+		position relative
+		img
+			position absolute
+			top 20px
+			right 20px
+			width 150px
+			height 150px
+			display none
+		
+		.form
+			margin 0 auto
+			width 100%
+			display flex
+			flex-direction column
+			.labels
+				margin 8px auto
+				width 90%
+				p
+					margin .1em 0
+					font-size 1.2em
+				.in
+					font-size 1.2em
+					padding .4em .5em
+					width 100%
+					margin 0 auto
+					border 2px solid azulFuerte
+					outline 0
+					border-radius .1em
+					color gray
+					&:focus
+						color green
+				.enviar
+					border-radius .4em
+					outline 0
+					border 1px solid white
+					background azulFuerte
+					color white
+					padding 5px 17px
+					margin 20px
+					transition .4s
+					font-size 1.2em
+					&:hover
+						transform scale(1.18)	
+					
+					
+.services
+	margin 0
+	&-wrap
+		display flex
+		justify-content center
+		flex-wrap wrap
+		margin 80px 0
+		&-item
+			border 1px solid grisesito
+			border-top 5px solid #3686BE
+			max-width 600px
+			margin 15px
+			padding 1.2em 1.5em
+			background white
+			
+			.plan
+				padding 0
+				list-style none
+				margin 1.5em 0
+				&-item
+					margin .4em 0
+					padding 0 .3em
+					display flex
+					-webkit-justify-content space-between
+					&:nth-child(odd)
+						background #ECEBEB
+					span
+						font-size 17px 
+						&:first-child
+							color #000
+						&:last-child
+							font-weight bold
+				&-button
+					border 1px solid #f6f6f6
+					font-size 1.3em
+					justify-content center
+					background #ccc
+					color white
+					border-radius .3em
+					padding .5em 0
+					width 180px
+					margin 0 auto
+					display block
+					text-align center
+					text-transform uppercase
+					transition .4s
+					&:hover
+						background gradientBlue
+					
+			&-title
+				font-size 1.7em !important
+				color grisesito
+				text-align center
+				margin-top 0
+			&:nth-child(3)
+				border-top 6px solid rojito
+				// transform scale(1.2)
+			.price
+				font-size 38px
+				text-align center
+				margin-top 0
+				
+	.plans
+		margin 0
+		background lightgray
+		&-title
+			text-align center
+
+		&-include
+			margin 0 auto
+			width 90%
+			text-align center
+			
+			&-list
+				margin-right 20px
+				font-size 20px
+				padding 0
+				list-style none
+				&-item
+					margin 15px 10px
+					display flex
+					align-items center
+	
+					span
+						background rojito 
+						color white
+						width 40px
+						height 40px
+						display flex
+						justify-content center
+						align-items center
+						border-radius 50%
+						margin 0 .5em 
+
+.us-wrap
+	margin 0
+	padding 20px
+	margin-bottom 40px
+	&-info
+		margin 0 auto
+		text-align justify
+		max-width 800px
+		&-title
+			margin 25px
+			text-align center
+			font-size 40px
+			
+		&-text
+			margin 0
+			font-weight normal
+			font-family sans-serif
+			font-size 18px
+
+
+
+.objectives
+	display flex
+	flex-direction column
+	align-items center
+	justify-content center
+	padding 20px
+	background #f6f6f6
+	.col1
+		margin 0
+		max-width 800px
+		.title
+			text-align center
+			padding-bottom 10px
+			margin-bottom 10px
+			border-bottom 1px solid azulOscuro
+		.objectives-list
+			padding 0
+			list-style none
+			display flex
+			flex-wrap wrap
+			text-align center
+			
+			&-item
+				margin-right 30px
+				font-size 19px
+				margin-bottom 1em
+				width 100%
+				// width 45%
+				
+				span.fa
+					color rojito	
+					font-size 1.3em
+	
+	.col2
+		margin 10px
+		font-size 20px
+		display flex
+		justify-content center
+		align-items center
+		max-width 500px
+		
+		p
+			margin 20px 15px
+			text-align justify
+		span.fa
+			color rojito
+			font-size 40px
+		
+		
+.benefits
+	margin 0
+	background #232C3B
+	color white
+	padding 20px 0
+	&-header
+		margin 0
+		text-align center
+	&-wrap
+		display flex
+		flex-wrap wrap
+		justify-content center
+		&-item
+			width 470px
+			height 240px
+			margin 20px 15px
+			color white
+			text-align center
+			position relative
+			z-index 2
+			
+			&-text
+				background rgba(0,0,0, .3)
+				display flex
+				align-items center
+				justify-content center
+				flex-direction column
+				padding 0 30px
+				z-index 5
+				position absolute
+				left 0px
+				top 0px
+				width 100%
+				height 100%
+				
+			img
+				position absolute
+				top 0
+				left 0
+				width 100%
+				height 100%
+				z-index 3
+			
+.header-intro
+	margin 0 
+	width 100%
+	margin-top 82px
+	h1
+		font-size 25px
+		
+	figure
+		width 100%
+		img 
+			width 100%
+			max-height 500px
+.burgerMenu
+	color white !important
+	display inline-block				
+	position absolute 
+	top 0
+	right 0
+	z-index 100
+	margin 30px
+	font-size 20px !important
+
+.right0
+	right 0 !important
+	
+	
+.projects
+	margin 0
+	.projects-wrap
+		margin 0
+		display flex
+		flex-wrap wrap
+		justify-content center
+		.projects-item
+			max-width 400px
+			height 250px
+			position relative
+			margin 5px
+			overflow hidden
+			&-img
+				width 100%
+				height 100%
+			.mask
+				background rgba(0,0,0,.65)
+				position absolute
+				top 0
+				left -400px
+				width 100%
+				height 100%
+				transition .4s
+				color white
+				.projects-item-go
+					background transparent
+					width 100% 
+					height 100%
+					position relative
+					overflow hidden
+					
+					a 
+						color white
+						position absolute
+						bottom -50px
+						right -55px
+						background rojito
+						overflow hidden
+						width 100px
+						height 100px
+						transform rotate(40deg)
+						span
+							transform rotate(-40deg)
+							position relative
+							top 37px
+							left 13px
+							font-size 1.4em
+				
+			
+		
+
+
+.start
+	margin 0
+	position relative
+	top 60px
+	z-index 15
+	
+	&-info
+		max-width 900px
+		margin 0 auto
+		text-align center
+		font-size 1.2em
+
+
+
+
+
+//OOCSS
+
+.ball
+	width 16px
+	height 16px
+	background white
+	border-radius 50%
+.my-title
+	font-size 2em
+	display flex
+	justify-content center
+	align-items center
+	flex-direction column
+
+.my-title-single
+	font-family Lato
+	line-height 28px
+	font-weight 700
+	font-style normal
+	color #444
+	font-size 28px
+	text-align center
+	margin 30px
+
+.intro-sec
+	max-width 750px
+	margin 30px auto
+	text-align center
+	&-title
+		margin 10px
+		font-size 35px
+	&-text
+		margin 20px
+		font-size 20px
+		
+
+
+.back-linear-red
+	background gradientRed
+
+.my-btn
+	outline 0
+	color white
+	border-radius 100px
+	padding .15em .4em
+	border 2px dashed white
+	transition .4s !important
+	color white !important
+	&:hover
+		border-radius 0
+.my-btn-transparent
+	border 2px solid #DE6E70
+	background transparent
+	padding .5em .6em
+	font-size 1.3em
+	border-radius 2em
+	transition .5s
+	color white
+	margin .5em 2em
+	text-transform uppercase
+	&:hover
+		border-radius 0
+		color white
+		text-decoration none
+		border-color #fff
+		
+
+.left0
+	left 0 !important
+
+.logo
+	width 70px
+	height 70px
+	margin-right 250px
+	&:hover
+		transform scale(1)
+	img
+		width 100%
+		height 100%
+
+a,button
+	transition .5s
+	&:hover
+		transform scale(1.07)
+.flex
+	display flex
+
+.flex-super-center
+	display flex
+	justify-content center
+	align-items center
+	text-align center
+
+.flex-spaced
+	display flex
+	justify-content space-between
+	
+.flex-center
+	display flex
+	justify-content center
+.flex-aligned-center
+	display flex
+	align-items center
+.colorAzul
+	color azulFuerte
+	
+.color-white
+	color #fff
+.call
+	max-width 550px
+	color white
+	padding 1em
+	margin-left auto
+	margin-right auto
+	font-family 'Slabo'
+	
+.block
+	display block
+.font13
+	font-size 13px
+.font18
+	font-size 18px	
+
+.font20
+	font-size 20px
+.font35
+	font-size 35px	
+.font40
+	font-size 40px
+.font50
+	font-size 50px
+.font-super
+	font-size 1.3em
+	color #ca0000
+	font-weight bold
+	
+.filter
+	background rgba(0,0,0,.15)
+	width 100%
+	height 100%
+	position absolute
+	top 0 
+	left 0
+	
+.text-shadow
+	text-shadow 0 0 10px #000
+.bold
+	font-weight bold
+	
+.bold-777
+	font-weight bold
+	color #777
+
+.main-container
+	margin-top 0
+.margin-right-100
+	margin-right 100px
+.margin-top0
+	margin-top 0
+.maxWidth900
+	max-width 900px
+.margin20
+	margin 20px !important
+	
+.margin10
+	margin 10px !important
+	
+.margin0
+	margin 0
+	
+.margin-l-r-5
+	margin 5px
+.margin10
+	margin 10px
+.margin-top81
+	margin-top 81px
+	
+.map
+	width 100%
+	iframe
+		width 100%
+.section-info
+	max-width 750px 
+	margin 20px auto
+	text-align center
+	&-title
+		font-size 35px
+		display flex
+		flex-direction column
+		justify-content center
+		align-items center
+		margin 0
+	&-text
+		font-size 18px
+	
+.colorWhite
+	color white	!important
+.backgreen
+	background verdesito
+.backWhite
+	background #fff !important
+.backblue
+	background gradientBlue
+.backRed
+	background rojito
+.backAzulOscuro
+	background azulOscuro
+.backAzulFuerte
+	background azulFuerte
+.divider
+	width 60px
+	height .12em
+	margin 10px auto
+.landingForm
+	background #232C3B	
+	color white
+	text-align center
+	max-width 800px
+	margin 30px 5px
+	border-radius 5px
+	padding 45px 0 30px 0
+	position relative
+	margin-top 60px
+	img
+		position absolute
+		top -30px
+		left -30px
+	form
+		display flex
+		flex-direction column
+		justify-content center
+		align-items center
+		width 100%
+		input
+			border 0
+			outline 0
+			padding 7px 10px 7px 7px
+			// width 30%
+			width 280px
+			margin 10px 0
+			color #000
+			margin-left 1px
+			border-radius 5px
+		
+			&:first-child
+				// border-radius 50px 0 0 50px
+			&:last-child
+				// border-radius 0 50px 50px 0
+				border-radius 5px
+				width 105px
+				
+	.copy
+		color #ccc
+		position relative
+		top 20px
+		font-size 13px
+		
+.logo-watching
+	width 180px !important
+	height 180px !important
+	display none
+.padding0
+	padding 0
+.padding1020
+	padding 10px 20px
+	
+.padding015
+	padding 0px 15px
+.padding6-9
+	padding 6px 9px	
+.padding20
+	padding 20px
+	
+.title-header
+	position absolute
+	top 5px
+	margin 0
+	left 0
+	right 0
+	
+.position-relative
+	position relative
+	
+
+
+.text-justify
+	text-align justify
+
+.triangle
+	width 20px
+	height 20px
+	background white
+	transform rotate(45deg)
+	display none
+	
