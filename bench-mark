@@ -23,3 +23,43 @@ http://muse.mara.kz/phone-repair-2/
 https://cynere.com/-web-development-company
 
 http://www.ironpaper.com/webdesign/  best!
+
+.heart-pulse{
+      animation-name:heart-pulsing;
+      animation-duration:2.7s;
+      animation-delay:2s;
+      animation-timing-function: linear;
+      animation-iteration-count:infinite;
+      transform:scale(2);
+      color:red;
+      margin:100px;
+    }
+
+
+    @keyframes heart-pulsing{
+        0%{
+          transform:scale(2);
+        }
+
+        8%{
+          transform:scale(2.6);
+        }
+
+        10%{
+          transform:scale(2.3);
+        }
+        14%{
+          transform:scale(3.1);
+
+        }
+
+        30%{
+          transform:scale(2);
+        }
+
+        100%{
+          transform:scale(2);
+
+        }
+
+    }
