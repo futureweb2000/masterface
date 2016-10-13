@@ -63,3 +63,50 @@ http://www.ironpaper.com/webdesign/  best!
         }
 
     }
+    
+    
+    <section class="mario-images">
+      <figure class="mario-images-item">
+        <img src="csdc.png" alt="">
+      </figure>
+      <figure class="mario-images-item">
+        <img src="csdc.png" alt="">
+      </figure>
+      <figure class="mario-images-item">
+        <img src="csdc.png" alt="">
+      </figure>
+      <figure class="mario-images-item">
+        <img src="csdc.png" alt="">
+      </figure>
+      <figure class="mario-images-item">
+        <img src="csdc.png" alt="">
+      </figure>
+    </section>
+    
+    
+    
+    
+    .mario-images{
+      display: flex;
+      flex-flow:row wrap;
+      width: 100%;
+      height: 200px
+    }
+
+
+     .mario-images-item{
+      width: 50%;
+      margin:0;
+      padding:0;
+    }
+
+    .mario-images-item:last-child{
+      display: none;;
+    }
+
+    .mario-images-item img{
+      width: 100%;
+      height:100%;
+      border: 1px solid gray;
+     
+    }
